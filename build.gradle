@@ -10,15 +10,11 @@ repositories {
 }
 
 dependencies {
-//    implementation 'junit:junit:4.13.1'
-//    testImplementation 'junit:junit:4.13.2'
-//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
-    testCompileOnly 'junit:junit:4.12'
-    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.8.1'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.junit.platform:junit-platform-engine:1.9.2'
+    testImplementation 'org.hamcrest:hamcrest-api:1.0'
+    testImplementation 'org.hamcrest:hamcrest-core:2.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
 }
 
-test {
-    useJUnitPlatform()
-}
